@@ -1,0 +1,44 @@
+public class Program6{
+	public static int product(int x, int y)
+	{
+		return x*y;
+	}
+
+public static int sumAll(int n, int m) {
+	int sum = 0;
+	for(int i = n; i<=m; i++)
+	{
+		sum+=n;
+	}
+return sum;
+}
+
+//My code that will calculate the average of the sum of all number from 1 to n, return a double
+public static double average(int n) {
+	double sum = 0.0;
+    double average=0.0;
+	for(int i=1; i<=n;i++) {
+		sum+=i;
+	}
+	average=sum/ n;
+	return average;
+	}
+	
+	public static void main( String [] args )
+	{
+		greet();
+		int total = sumAll(10, 20);
+		int product = product(5, 3);
+		double average1 = average(5);
+		
+		System.out.println("Total " + total);
+		System.out.println("Product " + product);
+		System.out.println("Average " + average1);
+	}
+	
+	private static void greet() {
+		System.out.println("Hello");
+	}
+		
+	}
+	
