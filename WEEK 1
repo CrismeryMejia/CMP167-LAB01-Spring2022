@@ -1,0 +1,19 @@
+// WEEK 1
+import java.util.Scanner; //Import Scanner Class
+public class Program1 {
+
+	public static void main(String[] args) {
+		
+	Scanner input = new Scanner (System.in); //creating the scanner object
+	
+	System.out.println("This is my first program!");
+	System.out.println("Ok, please enter your name: ");	
+	String name = input.nextLine();
+	String message = "Hello, " + name + ", it is so nice to meet you!"; //+ is to concatenate
+	System.out.println(message);	
+	
+	input.close();
+		
+	}
+
+}
