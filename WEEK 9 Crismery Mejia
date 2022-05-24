@@ -1,0 +1,74 @@
+
+// WEEK 9
+// Using the example from the Dog class, create a cat class
+// With at least 3 attributes, setters and getters, two constructors
+// Equals method, toString method and custom method
+public class Cat {
+
+		
+		private String name;
+		private int age;
+		private String species;
+		
+			//constructors
+		public Cat() {
+			this.name = "Milo";
+			this.age = 3;
+			this.species = "domestic";
+			
+		}
+		
+		public Cat(String name, int age, String species) {
+		this.name = name;
+		this.age = age;
+		this.species = species;
+		}
+		
+				//stters and getters
+		public void setName(String name) {
+			this.name = name;
+		}
+		
+		public void setAge(int age) {
+			this.age = age;
+		}
+		
+		public void setSpecies(String species) {
+			this.species = species;
+		}
+		
+		public String getName() {
+			return this.name;
+		}
+		
+		public int getAge() {
+			return age;
+		}
+		
+		public String getSpecies() {
+			return species;
+		}
+		
+		public boolean equals(Object obj) {
+			if(obj == this) return true;
+			if (obj == null) return false;
+			
+			if (obj instanceof Cat) {
+				Cat otherCat = (Cat) obj;
+				return otherCat.name.equals(this.name)&& otherCat.age == this.age
+					&& otherCat.species.equals(this.species);
+				
+			}
+		return false;
+		
+		}
+		public String toString() {
+			return "Cat: name = " + this.name + ", age = " + this.age + ", species = " + this.species;
+		}
+		
+		public void custom() {
+			System.out.println("mio  mio");
+		}	
+	
+}
+
