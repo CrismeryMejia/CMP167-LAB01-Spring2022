@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+// WEEK 5
+// Write a program that calculates all powers of two from 1 to 10
+public class PowerOfTwo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int number;
+		int power;
+		
+		
+	
+		System.out.println("Enter a number to calculate it to the power of two: ");
+		number = sc.nextInt();
+		
+		power = number * number;
+		
+		System.out.println(power);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
